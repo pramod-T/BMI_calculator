@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>BMI Calculator</title>
-    <!-- Add your external CSS link here -->
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -26,35 +25,35 @@
 		    <h1>The Category is: <span id='comment'> </span> </h1>
         </div>
 
-		<script>
-			function calculateBMI(){
-                var height = document.getElementById("height").value; 
-			    var weight = document.getElementById("weight").value; 
-				//Calculate BMI
-				let bmiValue = ((parseInt(weight)/(parseInt(height)**2))*703).toFixed(1);
-				let bmiComment = "";
+	<script>
+		function calculateBMI(){
+			var height = document.getElementById("height").value; 
+			var weight = document.getElementById("weight").value; 
+			//Calculate BMI
+			let bmiValue = ((parseInt(weight)/(parseInt(height)**2))*703).toFixed(1);
+			let bmiComment = "";
 
-                if(bmiValue<18.5)
-                {
-                    bmiComment="underweight range"
-                }
-                else if(bmiValue>=18.5 && bmiValue<=24.9){
-                    bmiComment="healthy weight range"
-                }
-                else if(bmiValue>=25 && bmiValue<=29.9){
-                    bmiComment="overweight range"
-                }
-                else{
-                    bmiComment="obese range"
-                }
+			if(bmiValue<18.5)
+			{
+			    bmiComment="underweight range"
+			}
+			else if(bmiValue>=18.5 && bmiValue<=24.9){
+			    bmiComment="healthy weight range"
+			}
+			else if(bmiValue>=25 && bmiValue<=29.9){
+			    bmiComment="overweight range"
+			}
+			else{
+			    bmiComment="obese range"
+			}
 
-				//Display the results on the page
-                document.getElementById("output").innerHTML = bmiValue; 
-				document.getElementById("comment").innerHTML = bmiComment; // Make sure you update bmiComment
+					//Display the results on the page
+			document.getElementById("output").innerHTML = bmiValue; 
+					document.getElementById("comment").innerHTML = bmiComment; 
 
-				return bmiComment;
-            }
-		</script>
+			return bmiComment;
+    		}
+	</script>
 		
   </body>
 </html>
