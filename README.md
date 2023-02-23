@@ -1,5 +1,5 @@
 # BMI_calculator
-BMI calculator shows BMI value and the Category it belong to when we enter height ad weight. 
+BMI calculator which shows BMI value and the Category it belong to when we enter height ad weight. 
 
 ## Skills Used
 HTML , CSS , JavaSript
